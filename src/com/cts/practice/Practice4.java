@@ -10,8 +10,25 @@ Explain the results.*/
 public class Practice4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		derivedClass obj = new derivedClass();
+	}
+}
 
+
+ abstract class baseClass {
+	baseClass() {
+	this.print();
+	}
+
+	abstract void print();
+}
+
+ class derivedClass extends baseClass {
+	int var = 6;
+
+	void print() {
+		System.out.println(var);
 	}
 
 }
+
