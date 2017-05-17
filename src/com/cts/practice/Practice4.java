@@ -27,8 +27,10 @@ public class Practice4 {
 	int var = 6;
 
 	void print() {
-		System.out.println(var);
+		System.out.println("Variable:"+var);
 	}
 
 }
 
+/* Print method is getting called in baseclass constructor before the intialization of the variable. 
+After inititalization of var to 6, print() is not getting called.*/
